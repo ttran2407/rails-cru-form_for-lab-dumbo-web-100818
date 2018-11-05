@@ -1,0 +1,13 @@
+<h1> Artist: <%= @artist[:name] %></h1>
+<p> <%= @artist[:bio] %> <p>
+<p> Song: <p>
+<p> <% @artist.songs.each do |song| %>
+<%= song[:name] %>
+<% end %>
+</p>
+
+<p> Genre: <p>
+<p> <% @artist.genres.each do |genre| %>
+<%= genre[:name] %>
+<% end %>
+</p>
